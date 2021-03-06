@@ -123,6 +123,15 @@
     *{
         font-size: 0.6rem;
     }
+    #navbar ul li a {
+        /* display block isliye diya taki hme padding de sake  */
+                color: white;
+                display: block;
+                padding: 3px 10px ;
+                border-radius: 20px;
+                text-decoration: none;
+                
+    }
     
 }
 
@@ -136,9 +145,6 @@
 {
     height: 160px;
     width: 200px;
-    display: block;
-    margin: auto;
-    border-radius: 30px;
 } 
 #Reason_Why_StartUp::before
 {
@@ -161,34 +167,40 @@
     {
         height: 160px;
         width: 150px;
-        display: block;
-        margin: auto;
-        border-radius: 30px;
     } 
 }
 
 /* for 262px */
 @media(max-width:262px){
-    #services .box img
-    {
-        height: 160px;
-        width: 100px;
-        display: block;
-        margin: auto;
-        border-radius: 30px;
-    } 
+    #services .box
+{
+    padding: 4px;
+    margin: 0px 6px 0px 6px;
+    border-radius: 23px;
+   
+}
+   
+    #services
+{
+   /* position: relative; */
+   /* top: 450px; */
+    margin: 3px;
+}
 }
 
 /* for 235px */
 @media(max-width:235px){
+    *{
+        font-size: 0.4rem;
+    }
+
     #services .box img
     {
         height: 145px;
         width: 95px;
-        display: block;
-        margin: auto;
-        border-radius: 30px;
+       
     } 
+   
     .client-item
     {
         padding: 10px;
@@ -199,11 +211,52 @@
     
         height: 60px;
     }
+    #navbar .btn{
+        position: relative;
+        right: 0px;
+    }
     
 }
 
+/* for 202 px */
+@media(max-width:202px){
 
+#members_box{
+   
+margin: 3px;
 
+}
+#members_box .box
+{
+    padding: 3px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 23px;
+    border: 1px solid brown;
+    background-color: rgb(240, 233, 233);
+
+}
+#members_box .box img
+{
+    height: 120px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+} 
+}
+
+/* 186 px */
+@media(max-width:235px){
+    #client-section
+    {
+        z-index: -1;
+    
+        position: relative;
+        /* sirf utni hi jagah lega jitni isko chahiye  */
+        height: 400px;
+    
+    }
+}
 
 
 
