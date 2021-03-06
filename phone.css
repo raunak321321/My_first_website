@@ -5,6 +5,10 @@
             /* home */
 
 @media(max-width:986px){
+    #navbar .btn{
+        position: fixed;
+        right: 0px;
+    }
     #home h1{
         display: block;
         width: 100%;
@@ -19,26 +23,189 @@
     #home::before{
         height: 370px;
     }
+    /* reason */
+
+    
+    #Reason_Why_StartUp{
+        padding: 3px 60px;
+    
+    }
+}
+/* 805 px ki baate krenge */
+@media(max-width:810px){
+    #navbar .btn{
+        position: fixed;
+        right: 0px;
+        font-size: 0.8rem;
+    }
+    #navbar{
+        flex-direction: column;
+
+    }
+    #navbar ul li a{
+        font-size: 1.2rem;
+    }
+    #home h1{
+        display: block;
+        width: 100%;
+        /* border: 2px red solid; */
+        /* background-color: rgb(73, 24, 233); */
+
+    }
+    #home{
+        padding: 3px 25px;
+        height: 409px;
+    }
+    #home::before{
+        height: 419px;
+    }
+    /* reason */
+
+    
+    #Reason_Why_StartUp{
+        padding: 3px 25px;
+    
+    }
+    #Why_choose_us{
+        padding: 3px 25px;
+    
+    }
+}
+/* 674 px ki baate krenge */
+@media(max-width:674px){
     *{
-        padding: 0px;
-        margin: 0px;
-        /* left: 0px; */
-        /* top: 0px; */
+        font-size: 0.8rem;
+    }
+    #navbar{
+        flex-direction: column;
+
+    }
+    #home h1{
+        display: block;
+        width: 100%;
+        /* border: 2px red solid; */
+        /* background-color: rgb(73, 24, 233); */
+
+    }
+    #home{
+        padding: 3px 3px;
+        height: 409px;
+    }
+    #home::before{
+        height: 419px;
+    }
+    /* reason */
+    #Reason_Why_StartUp::before
+    {
+        background: url(reason1.jpg)no-repeat center right/cover;
+          content: "";
+       
+     }  
+    
+   
+    #clients{
+        flex-wrap: wrap;
+    }
+    .client-item
+{
+    padding: 20px;
+}
+#clients img
+{
+    border-radius: 30px;
+
+    height: 60px;
+}
+
+}
+/* 444 px ki baate krenge */
+@media(max-width:444px){
+    *{
+        font-size: 0.6rem;
+    }
+    
+}
+
+/* for before 356 px */
+
+@media(max-width:356px){
+    *{
+        font-size: 0.6rem;
+    }
+    #services .box img
+{
+    height: 160px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+} 
+#Reason_Why_StartUp::before
+{
+    background: url(reason1.jpg)no-repeat center right/cover;
+      content: "";
+   
+ }  
+ #Why_choose_us::before
+{
+    content: "";
+
+    background : url(choose.jpg)right right/cover;
+   
+ }  
+    
+}
+    /* for 314px  */
+@media(max-width:314px){
+    #services .box img
+    {
+        height: 160px;
+        width: 150px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    } 
+}
+
+/* for 262px */
+@media(max-width:262px){
+    #services .box img
+    {
+        height: 160px;
+        width: 100px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    } 
+}
+
+/* for 235px */
+@media(max-width:235px){
+    #services .box img
+    {
+        height: 145px;
+        width: 95px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+    } 
+    .client-item
+    {
+        padding: 10px;
+    }
+    #clients img
+    {
+        border-radius: 30px;
+    
+        height: 60px;
     }
     
 }
 
 
 
-#Reason_Why_StartUp{
-
-}
 
 
-
-#Why_choose_us{
-
-}
 
 
 #members_box{

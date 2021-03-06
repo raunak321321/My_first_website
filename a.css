@@ -166,7 +166,7 @@ border-radius: 200px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 3px;
+    padding: 3px 150px;
     z-index: -1;
 
     position: relative;
