@@ -1,0 +1,70 @@
+#navbar{
+
+}
+
+            /* home */
+
+@media(max-width:986px){
+    #home h1{
+        display: block;
+        width: 100%;
+        /* border: 2px red solid; */
+        /* background-color: rgb(73, 24, 233); */
+
+    }
+    #home{
+        padding: 3px 100px;
+        height: 350px;
+    }
+    #home::before{
+        height: 370px;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+        /* left: 0px; */
+        /* top: 0px; */
+    }
+    
+}
+
+
+
+#Reason_Why_StartUp{
+
+}
+
+
+
+#Why_choose_us{
+
+}
+
+
+#members_box{
+    flex-direction: column;
+
+}
+
+
+
+.services-container{
+
+}
+
+
+#services{
+    flex-direction: column;
+
+}
+
+
+#client-section
+{
+
+}
+
+#clients{
+
+}
+

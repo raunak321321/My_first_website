@@ -1,0 +1,480 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+/* css variables */
+/* :root{
+--navbar-height : 59px;
+} */
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+     /* position: relative; */
+    width: 100%;
+     position: fixed;
+
+}
+
+/* navigation bar:logo  and image */
+#logo{
+    margin: 3px 6px;
+
+}
+
+#logo img{
+height: 39px;
+margin: 3px 6px;
+border-radius: 100px;
+
+}
+#logo img:hover{
+/* height: 100px; */
+cursor: pointer;
+border: 2px solid rgb(242, 245, 242);
+margin: 3px 6px;
+border-radius: 200px;
+
+}
+/* navigation bar:list styling */
+#navbar ul{
+    z-index: 0;
+    font-family: 'Playball', cursive;
+    display: flex;
+}
+#navbar::before{
+  
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    
+
+}
+#navbar ul li a {
+    /* display block isliye diya taki hme padding de sake  */
+            color: white;
+            display: block;
+            padding: 3px 22px ;
+            border-radius: 20px;
+            text-decoration: none;
+            
+}
+#navbar ul li a:hover{
+    /* display block isliye diya taki hme padding de sake  */
+    color: black;
+    background-color: white;
+          
+
+}
+
+/* Home section */
+#home{
+    /* width: 100%; */
+    /* width: 10; */
+    
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 416px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(startup.webp)no-repeat center center/cover;
+    height: 496px;    /* ye mene change kiya h */
+    /* height: 450px; */
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p
+{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Reason section */
+#Reason_Why_StartUp
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 224px;
+    margin: 3px;
+    z-index: -1;
+
+    position: relative;
+    height: 500px;
+}
+#Reason_Why_StartUp::before
+{
+    background: url(reason1.jpg)no-repeat center center/cover;
+      content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+ }  
+ #Reason_Why_StartUp h1
+ {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#Reason_Why_StartUp p
+{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Why choose us */
+#Why_choose_us
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    z-index: -1;
+
+    position: relative;
+    height: 300px;
+}
+#Why_choose_us::before
+{
+    display: flex;
+    flex-direction: row;
+
+    background : url(choose.jpg)right;
+    background-position: 00px;
+    /* background : url(member1.jpg)no-repeat right right/cover; */
+  
+
+      content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+ }  
+/* #Why_choose_us::before
+{
+    background: url(member1.jpg)no-repeat center center/cover;
+      content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+ }   */
+
+ #Why_choose_us h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+   /* members section */
+
+#members{
+    z-index: -1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#members_box{
+    /* display: block; */
+    display: flex;   
+    /* width: 100%; */
+    height: 100%;
+margin: 10px;
+flex-wrap: nowrap;
+/* left: 0px; */
+
+}
+#members_box .box
+{
+    padding: 10px;
+    margin: 6px 6px 6px 6px;
+    border-radius: 23px;
+    border: 1px solid brown;
+    background-color: rgb(240, 233, 233);
+
+}
+#members_box .box img
+{
+    height: 160px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+} 
+/* services section */
+
+.services-container h1
+{
+    z-index: -1;
+
+    position: relative;
+}
+.services-container h1::before
+{
+    background: url(services.jpg)no-repeat center center/cover;
+      content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 351%;
+    z-index: -1;
+    opacity: 1;
+ }  
+#services
+{
+   /* position: relative; */
+   /* top: 450px; */
+    margin: 17px;
+
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+#services .box
+{
+    padding: 34px;
+    margin: 0px 6px 20px 6px;
+    border-radius: 23px;
+    border: 2px solid brown;
+    background-color: rgb(240, 233, 233);
+
+}
+#services .box img
+{
+    height: 160px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+} 
+#services .box p
+{
+
+    font-family: 'Bree Serif', serif;
+
+} 
+
+
+/* clients sections */
+#client-section
+{
+    z-index: -1;
+
+    position: relative;
+    /* sirf utni hi jagah lega jitni isko chahiye  */
+    height: 300px;
+
+}
+#client-section::before
+{
+
+    content: "";
+    position: absolute;
+    background: url(sponsored.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.client-item
+{
+    padding: 34px;
+}
+#clients img
+{
+    border-radius: 30px;
+
+    height: 80px;
+}
+
+
+/* contact section */
+#contact
+{
+    position: relative;
+    
+    
+}
+#contact::before
+{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input
+{
+
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form
+{
+    width: 40%;
+    
+}
+#contact-box label
+{
+    font-family: 'Bree Serif', serif;
+
+    font-size: 1.3rem;
+}
+
+
+footer
+{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* utility classes */
+.h-primary
+{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary
+{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+nav .btn
+{
+    font-family: 'Playball', cursive;
+
+    position: fixed;
+    right: 100px;
+    padding: 2px 8px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    margin: 12px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+#home .btn
+{
+    font-family: 'Playball', cursive;
+
+    /* position: fixed; */
+    /* right: 100px; */
+    padding: 2px 8px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    margin: 12px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+#home .btn:hover
+{
+    background-color: rgb(50, 96, 235);
+    color: rgb(19, 18, 18);
+    /* height: 43px; */
+    font-size: 1.1rem;
+
+
+}
+nav .btn:hover
+{
+    background-color: rgb(50, 96, 235);
+    color: rgb(19, 18, 18);
+    /* height: 43px; */
+    font-size: 1.1rem;
+
+
+}
+.center
+{
+    text-align: center;
+}
+
+
