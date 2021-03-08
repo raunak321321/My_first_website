@@ -27,3 +27,9 @@ function myFunction1(x1) {
   let x1 = window.matchMedia("(max-width: 830px)")
   myFunction1(x1) // Call listener function at run time
   x1.addListener(myFunction1) // Attach listener function on state changes
+
+  function time(){
+    time = new Date()
+    document.getElementById('time').innerHTML=time;
+}
+ setInterval(time, 1000);

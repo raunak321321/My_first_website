@@ -405,6 +405,15 @@ footer
     color: white;
     padding: 9px 20px;
 }
+footer #time{
+    /* display: inline; */
+    /* float: left; */
+    /* background-color: aliceblue; */
+    /* color: white; */
+    color: white;
+    position: sticky;
+    /* right: 0px; */
+}
 
 
 /* utility classes */
